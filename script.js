@@ -28,12 +28,15 @@
 //  Expected output of person.greet():
 //    "Hi, I'm Alex and I'm 17 years old."
 // ============================================================
-
 const person = {
   name: "Alex",
   age: 17,
 
-  greet() {
+  greet(name, age) {
+    this.name = name
+    this.age = age
+
+    return `HI, I'm " ${this.name} + "and I'm ${this.age}`
     // TODO: Use this.name and this.age to build a return string.
     //       The format should be: "Hi, I'm [name] and I'm [age] years old."
     //       Do NOT hard-code "Alex" or "17" — use this!
@@ -57,25 +60,27 @@ const person = {
 
 const counter = {
   count: 0,
-
+  
   increment(amount) {
     // TODO: Add "amount" to this.count
-
+    this.count += amount
   },
 
   decrement(amount) {
     // TODO: Subtract "amount" from this.count
+    this.count -= amount
 
   },
 
   reset() {
     // TODO: Set this.count back to 0
+    this.count = amount
 
   },
 
   getCount() {
     // TODO: Return the current value of this.count
-
+    return this.count
   }
 };
 
