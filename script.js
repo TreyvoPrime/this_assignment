@@ -27,7 +27,7 @@
 //  and return an introduction string.
 //
 //  Expected output of person.greet():
-//    "Hi, I'm Alex and I'm 17 years old."
+//    "Hi, I'm Alex and I'm 17 years old.
 // ============================================================
 const person = {
   name: "Alex",
